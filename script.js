@@ -36,4 +36,62 @@ function generatePassword() {
         selectUppercase = confirm("Do you require Uppercase letters?");
         selectLowercase = confirm("Do you requireLowercase letters?");
     };
+
+    // Prompt is if no options are selected 
+    if (!selectSymbol && !selectNumber && !selectUppercase && !selectLowercase) {
+        options = alert("At least one choice is required!");
+
+    }
+    // All options selected
+    else if (selectSymbol && selectNumber && selectUppercase && selectLowercase) {
+
+        options = symbols.concat(number, lower, upper);
+    }
+    // 3 options selected 
+    else if (selectSymbol && selectNumber && selectUppercase) {
+        options = symbols.concat(number, upper);
+    }
+    else if (selectSymbol && selectNumber && selectLowercase) {
+        options = symbols.concat(number, lower);
+    }
+    else if (selectSymbol && selectLowercase && selectUppercase) {
+        options = symbols.concat(lower, upper);
+    }
+    else if (selectNumber && selectLowercase && selectUppercase) {
+        options = number.concat(lower, upper);
+    }
+    // 2 options selected
+    else if (selectSymbol && selectNumber) {
+        options = symbols.concat(number);
+
+    } else if (selectSymbol && selectLowercase) {
+        options = symbols.concat(lower);
+
+    } else if (selectSymbol && selectUppercase) {
+        options = symbols.concat(upper);
+    }
+    else if (selectLowercase && selectNumber) {
+        options = lower.concat(number);
+
+    } else if (selectLowercase && selectUppercase) {
+        options = lower.concat(upper);
+
+    } else if (selectNumber && selectUppercase) {
+        options = number.concat(upper);
+    }
+    // 1 option selected 
+    else if (selectSymbol) {
+        options = symbols;
+    }
+    else if (selectNumber) {
+        options = number;
+    }
+    else if (selectUppercase) {
+        options = upper;
+    }
+    else if (selectLowercase) {
+        options = lower;
+    }
+    
 }
+
