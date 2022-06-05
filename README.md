@@ -27,3 +27,13 @@ THEN the password is either displayed in an alert or written to the page
 Mock-Up
 The following image shows the web application's appearance and functionality:
 https://courses.bootcampspot.com/courses/2422/files/1705041/preview
+
+GitHub URL: https://github.com/GlennAGeorge/Module-3-Challenge_Password-Generator
+
+VS code Live Server: http://127.0.0.1:5500/index.html
+
+GitHub Pages URL (Deployment):  https://glennageorge.github.io/Module-3-Challenge_Password-Generator/
+
+Support: glennadamgeorge@gmail.com
+
+Project Status: Complete
